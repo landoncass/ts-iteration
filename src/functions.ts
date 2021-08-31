@@ -109,7 +109,7 @@ type Movie = {
   year: number
   score: number
 }
-function bestMoviesOfTheYear(movieObjectArray: Movie[], year: number): Movie[] {
+function bestMoviesOfTheYear(movieObjectArray: Movie[], year: number): string[] {
   // Replace the code below with your own code
   return []
 }
