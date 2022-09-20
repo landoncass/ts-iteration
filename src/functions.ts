@@ -29,7 +29,7 @@
 
 function yelling(words: string[]): string[] {
   // Replace the code below with your own code
-  return []
+  return words.map(word => word.toUpperCase())
 }
 
 /**
@@ -44,7 +44,7 @@ function yelling(words: string[]): string[] {
 
 function doubleTrouble(numbers: number[]): number[] {
   // Replace the code below with your own code
-  return []
+  return numbers.map(number => number * 2)
 }
 
 /*
@@ -58,7 +58,9 @@ function doubleTrouble(numbers: number[]): number[] {
 
 function stringyIndexes(strings: string[]): string[] {
   // Replace the code below with your own code
-  return []
+  return strings.map(
+    string => string + ' is at index ' + strings.indexOf(string)
+  )
 }
 
 /*
@@ -109,7 +111,10 @@ type Movie = {
   year: number
   score: number
 }
-function bestMoviesOfTheYear(movieObjectArray: Movie[], year: number): string[] {
+function bestMoviesOfTheYear(
+  movieObjectArray: Movie[],
+  year: number
+): string[] {
   // Replace the code below with your own code
   return []
 }
