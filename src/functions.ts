@@ -73,7 +73,8 @@ function stringyIndexes(strings: string[]): string[] {
 
 function onlyTheEvenSurvive(numbers: number[]): number[] {
   // Replace the code below with your own code
-  return []
+
+  return numbers.filter(number => number % 2 === 0)
 }
 
 /*
@@ -86,7 +87,7 @@ function onlyTheEvenSurvive(numbers: number[]): number[] {
 
 function onlyTheEvenIndexedSurvive(numbers: number[]): number[] {
   // Replace the code below with your own code
-  return []
+  return numbers.filter((_number, index) => index % 2 === 0)
 }
 
 /*
@@ -116,7 +117,9 @@ function bestMoviesOfTheYear(
   year: number
 ): string[] {
   // Replace the code below with your own code
-  return []
+  return movieObjectArray
+    .filter(movie => movie.year === year && movie.score > 90)
+    .map(movie => movie.name)
 }
 
 /*
